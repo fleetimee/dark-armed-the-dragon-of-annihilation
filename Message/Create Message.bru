@@ -1,0 +1,30 @@
+meta {
+  name: Create Message
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{URL}}/api/messages
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZjYTlkZWY5LTAzNjEtNDY0NS1hOGY3LWZiZWI4YWMxMTYwYiIsImVtYWlsIjoiYWRlbGprdDQ4QGprdDQ4LmNvbSIsIm5hbWUiOiJSZXZhIEZpZGVsZGEiLCJyb2xlcyI6Im1lbWJlciIsImlhdCI6MTcwOTMzNDMwMSwiZXhwIjoxNzA5NDIwNzAxfQ.-WUJP1Hr9SJaQ21i6pIjzcEAhheSengFG20qOjXehXQ
+}
+
+body:json {
+  {
+    "conversationId": "4b27af39-11a5-4f06-9ddf-d0b84e2fd029",
+    "messages": "Hello",
+    "attachments": [
+      {
+        "file_path": "heh.jpg",
+        "file_type": ".pdf",
+        "file_size": 1000,
+        "checksum": "ansdjand"
+      }
+    ]
+  }
+}

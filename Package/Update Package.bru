@@ -1,0 +1,21 @@
+meta {
+  name: Update Package
+  type: http
+  seq: 3
+}
+
+patch {
+  url: {{URL}}/api/package/45afd298-91c3-400e-b846-e577735910df
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZjZDhjMTY0LTRiOWQtNGU3My05MzYwLWZhMzg4ZmJjZTJlMyIsImVtYWlsIjoiaGVsbG9AZmxlZXRpbWUubXkuaWQiLCJuYW1lIjoiTm92aWFuIEFuZGluaSIsImlhdCI6MTcwOTA0OTEzMiwiZXhwIjoxNzA5MTM1NTMyfQ.TuchgTjsdTafR60j-0zenvgJ5mgAjCZqDsl5lhEUFbs
+}
+
+body:json {
+  {
+    "isActiove": "test"
+  }
+}

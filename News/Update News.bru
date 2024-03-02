@@ -1,0 +1,22 @@
+meta {
+  name: Update News
+  type: http
+  seq: 6
+}
+
+put {
+  url: {{URL}}/api/news/5d3e7ff2-c8b7-4d3b-8ec0-ac0fa46a9184
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZjZDhjMTY0LTRiOWQtNGU3My05MzYwLWZhMzg4ZmJjZTJlMyIsImVtYWlsIjoiaGVsbG9AZmxlZXRpbWUubXkuaWQiLCJuYW1lIjoiTm92aWFuIEFuZGluaSIsInJvbGVzIjoiYWRtaW4iLCJpYXQiOjE3MDkxODc0MDcsImV4cCI6MTcwOTI3MzgwN30.foGtZZyWdIB5RL48pdo7cHLruPy8qIij1ILcjVv23Ns
+}
+
+body:json {
+  {
+    "title": "Nice Dream",
+    "body": "Moohoto"
+  }
+}

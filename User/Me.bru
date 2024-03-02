@@ -1,0 +1,19 @@
+meta {
+  name: Me
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{URL}}/api/user/me
+  body: none
+  auth: bearer
+}
+
+query {
+  : 
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjljNDA2YjM3LWU5NjctNGQ2My1hOTlkLWRhMWRjYmQxNThkZSIsImVtYWlsIjoibm92aWFuLmFuZGlrYUBicGRkaXkuY28uaWQiLCJuYW1lIjoiTm92aWFuYSIsImlhdCI6MTcwODk5NTk5OSwiZXhwIjoxNzA5MDgyMzk5fQ.OPWRGMg8NnZOBgB1KJ9LbOo77bBw8FH6uhXzXyyDCTE
+}

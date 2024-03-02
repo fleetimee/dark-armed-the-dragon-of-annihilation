@@ -1,0 +1,18 @@
+meta {
+  name: Verify Email
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{URL}}/api/verifyToken
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "email": "novian.andika@bpddiy.co.id",
+    "verificationToken": "WqAtCe"
+  }
+}

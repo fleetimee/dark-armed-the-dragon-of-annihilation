@@ -1,0 +1,21 @@
+meta {
+  name: Update Post
+  type: http
+  seq: 1
+}
+
+put {
+  url: {{URL}}/api/posts/b9598ef4-0951-4beb-8023-16cb13990e5b
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZjZDhjMTY0LTRiOWQtNGU3My05MzYwLWZhMzg4ZmJjZTJlMyIsImVtYWlsIjoibm92aWFuLmFuZGlrYUBicGRkaXkuY28uaWQiLCJuYW1lIjoiTm92aWFuYSIsImlhdCI6MTcwODg2Nzk4MiwiZXhwIjoxNzA4OTU0MzgyfQ.lj88gcxYIsvcO_OLsr3vQJGn0J7i-qj2rMIEvshzJJs
+}
+
+body:json {
+  {
+    "body": "Lalalal"
+  }
+}

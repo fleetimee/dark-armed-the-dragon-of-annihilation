@@ -1,0 +1,15 @@
+meta {
+  name: Get Conversation
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{URL}}/api/conversation
+  body: none
+  auth: none
+}
+
+query {
+  ~pageSize: 
+}

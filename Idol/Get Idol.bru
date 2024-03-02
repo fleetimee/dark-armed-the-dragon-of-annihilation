@@ -1,0 +1,18 @@
+meta {
+  name: Get Idol
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{URL}}/api/idol
+  body: none
+  auth: none
+}
+
+query {
+  ~searchQuery: aman
+  ~orderDirection: ASC
+  ~pageSize: 1
+  ~page: 
+}

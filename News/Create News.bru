@@ -1,0 +1,22 @@
+meta {
+  name: Create News
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{URL}}/api/news
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjljNDA2YjM3LWU5NjctNGQ2My1hOTlkLWRhMWRjYmQxNThkZSIsImVtYWlsIjoibm92aWFuLmFuZGlrYUBicGRkaXkuY28uaWQiLCJuYW1lIjoiTm92aWFuYSIsImlhdCI6MTcwODkyNjAxMywiZXhwIjoxNzA5MDEyNDEzfQ.9XPhXOjX520y6f7LEumMRNQPYq-KKnosTTdrwdGxkfY
+}
+
+body:json {
+  {
+    "title": "Zeee",
+    "body": "ZeeeeZaaa"
+  }
+}

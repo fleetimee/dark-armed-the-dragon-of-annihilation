@@ -1,0 +1,30 @@
+meta {
+  name: Register
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{URL}}/api/register
+  body: json
+  auth: none
+}
+
+query {
+  : 
+}
+
+body:json {
+  {
+    "email": "macha@gmail.com",
+    "name": "Frieren",
+    "password": "12345678",
+    "birthday": "2000-01-01"
+  }
+}
+
+body:multipart-form {
+  email: novian.andika@bpddiy.co.id
+  name: Novian Andika
+  password: 123456
+}
