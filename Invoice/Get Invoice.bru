@@ -1,0 +1,30 @@
+meta {
+  name: Get Invoice
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{URL}}/api/invoice
+  body: json
+  auth: bearer
+}
+
+headers {
+  Content-Type: application/json
+  Accept-Encoding: gzip, deflate, br
+  Accept: */*
+  Connection: keep-alive
+  User-Agent: PostmanRuntime/7.36.3
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkZTU1MmM3LTI2NjktNDg0YS05OGU3LTI1MDRhNmNmZWEzMSIsImVtYWlsIjoibWFjaGFAZ21haWwuY29tIiwibmFtZSI6IkZyaWVyZW4iLCJyb2xlcyI6InVzZXIiLCJpYXQiOjE3MDk1MTI5ODgsImV4cCI6MTcwOTU5OTM4OH0.PckdfIjzBFQx2RdmQD0-gSgckgMgVjc2uqREtMqYanQ
+}
+
+body:json {
+  {
+    "idOrder": "97d63d5f-2e1d-4635-bead-c96ff63ce2fc",
+    "currency": "IDR"
+  }
+}

@@ -1,0 +1,26 @@
+meta {
+  name: Create Order
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{URL}}/api/order
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkZTU1MmM3LTI2NjktNDg0YS05OGU3LTI1MDRhNmNmZWEzMSIsImVtYWlsIjoibWFjaGFAZ21haWwuY29tIiwibmFtZSI6IkZyaWVyZW4iLCJyb2xlcyI6InVzZXIiLCJpYXQiOjE3MDk0NTY5MzYsImV4cCI6MTcwOTU0MzMzNn0.rNvmGgC_hoXbmrGMy3D53IJ0weHyM0bTXkrBdB_-ODk
+}
+
+body:json {
+  {
+    "packageId": "6a472368-c380-4272-8de5-83b45892d8eb",
+    "paymentMethod": "xendit",
+    "subtotal": 50000,
+    "tax": 9900,
+    "total": 989999,
+    "idolIds": ["JKT48-1"]
+  }
+}
