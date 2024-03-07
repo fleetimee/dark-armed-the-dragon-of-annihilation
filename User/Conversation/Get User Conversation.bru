@@ -1,17 +1,13 @@
 meta {
-  name: Get Conversation
+  name: Get User Conversation
   type: http
   seq: 1
 }
 
 get {
-  url: {{URL}}/api/conversation
+  url: {{URL}}/api/user/me/conversationList
   body: none
   auth: bearer
-}
-
-query {
-  ~pageSize: 
 }
 
 auth:bearer {

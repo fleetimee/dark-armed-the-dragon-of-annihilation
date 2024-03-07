@@ -1,0 +1,15 @@
+meta {
+  name: [ADMIN] Count Registered User
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{URL}}/api/user/countRegistered
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZjZDhjMTY0LTRiOWQtNGU3My05MzYwLWZhMzg4ZmJjZTJlMyIsImVtYWlsIjoiaGVsbG9AZmxlZXRpbWUubXkuaWQiLCJuYW1lIjoiTm92aWFuIEFuZGluaSIsInJvbGVzIjoiYWRtaW4iLCJpYXQiOjE3MDk1OTEzOTYsImV4cCI6MTcwOTY3Nzc5Nn0.5AjGz5pFyvAfuhg8CMocAx4k5BqQbjvCpc00YrmGGQ8
+}

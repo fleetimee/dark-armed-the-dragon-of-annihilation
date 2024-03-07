@@ -1,0 +1,30 @@
+meta {
+  name: [ADMIN] Create Idol
+  type: http
+  seq: 13
+}
+
+post {
+  url: {{URL}}/api/idol
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZjZDhjMTY0LTRiOWQtNGU3My05MzYwLWZhMzg4ZmJjZTJlMyIsImVtYWlsIjoiaGVsbG9AZmxlZXRpbWUubXkuaWQiLCJuYW1lIjoiTm92aWFuIEFuZGluaSIsInJvbGVzIjoiYWRtaW4iLCJpYXQiOjE3MDk2OTExOTMsImV4cCI6MTcwOTc3NzU5M30.oSmbM7f5h4xNxo5cmEBnsZ4qy7OgF_ykJTCS26NN7VI
+}
+
+body:json {
+  {
+    "email": "daza@jkt48.com",
+    "password": "12345678",
+    "fullName": "Cathleen Nixie",
+    "nickname": "Cathy",
+    "birthday": "2009-05-28",
+    "height": 158,
+    "bloodType": "A",
+    "horoscope": "Taurus",
+    "instagramUrl": "https://www.instagram.com/jkt48.cathy/",
+    "xUrl": "https://twitter.com/N_CathyJKT48"
+  }
+}

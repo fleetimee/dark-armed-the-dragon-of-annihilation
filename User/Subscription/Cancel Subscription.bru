@@ -1,30 +1,15 @@
 meta {
-  name: Get Invoice
+  name: Cancel Subscription
   type: http
   seq: 2
 }
 
-post {
-  url: {{URL}}/api/invoice
-  body: json
+get {
+  url: {{URL}}/api/user/me/cancelSubscription
+  body: none
   auth: bearer
-}
-
-headers {
-  Content-Type: application/json
-  Accept-Encoding: gzip, deflate, br
-  Accept: */*
-  Connection: keep-alive
-  User-Agent: PostmanRuntime/7.36.3
 }
 
 auth:bearer {
   token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZjZDhjMTY0LTRiOWQtNGU3My05MzYwLWZhMzg4ZmJjZTJlMyIsImVtYWlsIjoiaGVsbG9AZmxlZXRpbWUubXkuaWQiLCJuYW1lIjoiTm92aWFuIEFuZGluaSIsInJvbGVzIjoiYWRtaW4iLCJpYXQiOjE3MDk3MTQyNzYsImV4cCI6MTcwOTgwMDY3Nn0.HjMcD1BcI9hZ4o0plm80GxiGhqzVGteYtq0DNl-UPnA
-}
-
-body:json {
-  {
-    "idOrder": "896070de-7a8b-4907-b579-97bf29bb632b",
-    "currency": "IDR"
-  }
 }

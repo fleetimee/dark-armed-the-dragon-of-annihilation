@@ -1,0 +1,27 @@
+meta {
+  name: Update Idol
+  type: http
+  seq: 3
+}
+
+patch {
+  url: {{URL}}/api/idol/fca9def9-0361-4645-a8f7-fbeb8ac1160b
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZjZDhjMTY0LTRiOWQtNGU3My05MzYwLWZhMzg4ZmJjZTJlMyIsImVtYWlsIjoiaGVsbG9AZmxlZXRpbWUubXkuaWQiLCJuYW1lIjoiTm92aWFuIEFuZGluaSIsInJvbGVzIjoiYWRtaW4iLCJpYXQiOjE3MDk2NzU1NjEsImV4cCI6MTcwOTc2MTk2MX0.j1oDMpdXFj5MVUQD_lmDbZETBCcA2fgaZUTR2APZJX8
+}
+
+body:json {
+  {
+    "email": "adelbackup@gmail.com",
+    "fullName": "Test",
+    "nickName": "Test Nickname",
+    "birthday": "2000-01-01",
+    "height": 189,
+    "bloodType": "O",
+    "horoscope": "Libra"
+  }
+}

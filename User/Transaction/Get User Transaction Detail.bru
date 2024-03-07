@@ -1,0 +1,15 @@
+meta {
+  name: Get User Transaction Detail
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{URL}}/api/user/me/transactionDetail/97d63d5f-2e1d-4635-bead-c96ff63ce2fc
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkZTU1MmM3LTI2NjktNDg0YS05OGU3LTI1MDRhNmNmZWEzMSIsImVtYWlsIjoibWFjaGFAZ21haWwuY29tIiwibmFtZSI6IkZyaWVyZW4iLCJyb2xlcyI6InVzZXIiLCJpYXQiOjE3MDk3NzY0MzEsImV4cCI6MTcwOTg2MjgzMX0.rdh1jsTF1IqBOAc4G7Wwj1chV9NzZGUAWF_9VEBScsA
+}

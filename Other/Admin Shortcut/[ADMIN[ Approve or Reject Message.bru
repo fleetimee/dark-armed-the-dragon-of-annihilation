@@ -1,15 +1,21 @@
 meta {
-  name: Get Message By Conversation Id
+  name: [ADMIN[ Approve or Reject Message
   type: http
-  seq: 1
+  seq: 6
 }
 
-get {
-  url: {{URL}}/api/messages/4b27af39-11a5-4f06-9ddf-d0b84e2fd029
-  body: none
+patch {
+  url: {{URL}}/api/messages/534889ec-1b13-4498-ace2-a2b563c7bca3/approveOrReject
+  body: json
   auth: bearer
 }
 
 auth:bearer {
   token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZjZDhjMTY0LTRiOWQtNGU3My05MzYwLWZhMzg4ZmJjZTJlMyIsImVtYWlsIjoiaGVsbG9AZmxlZXRpbWUubXkuaWQiLCJuYW1lIjoiTm92aWFuIEFuZGluaSIsInJvbGVzIjoiYWRtaW4iLCJpYXQiOjE3MDk2MzcyMTAsImV4cCI6MTcwOTcyMzYxMH0.1YA9L1IVpOtwgfdKr3v1pXVTHHvgH9JzuVOeekcB6mA
+}
+
+body:json {
+  {
+    "isApproved": true
+  }
 }

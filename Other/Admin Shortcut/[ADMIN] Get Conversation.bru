@@ -1,13 +1,17 @@
 meta {
-  name: Get Message By Conversation Id
+  name: [ADMIN] Get Conversation
   type: http
-  seq: 1
+  seq: 3
 }
 
 get {
-  url: {{URL}}/api/messages/4b27af39-11a5-4f06-9ddf-d0b84e2fd029
+  url: {{URL}}/api/conversation
   body: none
   auth: bearer
+}
+
+query {
+  ~pageSize: 
 }
 
 auth:bearer {
