@@ -1,0 +1,15 @@
+meta {
+  name: Get User Message
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{URL}}/api/user/me/conversation/4b27af39-11a5-4f06-9ddf-d0b84e2fd029
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZjZDhjMTY0LTRiOWQtNGU3My05MzYwLWZhMzg4ZmJjZTJlMyIsImVtYWlsIjoiaGVsbG9AZmxlZXRpbWUubXkuaWQiLCJuYW1lIjoiTm92aWFuIEFuZGluaSIsInJvbGVzIjoiYWRtaW4iLCJpYXQiOjE3MDk4ODUwODUsImV4cCI6MTc0MTQ0MjY4NX0.1h04JSft4l2XD5OWCf0LbNqNfpl6iBI1p5gtKqFEYtk
+}

@@ -1,17 +1,13 @@
 meta {
-  name: Get Logged On Profile
+  name: Delete Reaction
   type: http
-  seq: 1
+  seq: 2
 }
 
-get {
-  url: {{URL}}/api/user/me
+delete {
+  url: {{URL}}/api/user/me/unReactMessage/534889ec-1b13-4498-ace2-a2b563c7bca3/reaction/a1d1ba7b-f855-4891-a878-b1f5255bee5e
   body: none
   auth: bearer
-}
-
-query {
-  : 
 }
 
 auth:bearer {
