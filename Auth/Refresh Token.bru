@@ -4,8 +4,16 @@ meta {
   seq: 6
 }
 
-get {
-  url: 
+post {
+  url: {{URL}}/api/refresh
   body: none
-  auth: none
+  auth: bearer
+}
+
+headers {
+  Cookie: refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoicmVmcmVzaCIsImlkIjoiZmNkOGMxNjQtNGI5ZC00ZTczLTkzNjAtZmEzODhmYmNlMmUzIiwiZW1haWwiOiJoZWxsb0BmbGVldGltZS5teS5pZCIsIm5hbWUiOiJOb3ZpYW4gQW5kaW5pIiwicm9sZXMiOiJhZG1pbiIsImlhdCI6MTcxMDQ2ODE3NSwiZXhwIjoxNzQxNTcyMTc1fQ.7-WmTnOuUcgO8c7rSdGmMbzx13cOxAuhqZzSAX3LaEg; Path=/; Expires=Sat, 15 Mar 2025 02:02:55 GMT; HttpOnly; Secure; SameSite=None
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImhlbGxvQGZsZWV0aW1lLm15LmlkIiwiaWF0IjoxNzEwNDY2MjE2LCJleHAiOjE3NDE1NzAyMTZ9.3l5WI3cvLum4qym3MRR_W6TgF-apxio0wctaKqcROUs
 }

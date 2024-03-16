@@ -6,12 +6,12 @@ meta {
 
 post {
   url: {{URL}}/api/messages
-  body: json
+  body: multipartForm
   auth: bearer
 }
 
 auth:bearer {
-  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZjYTlkZWY5LTAzNjEtNDY0NS1hOGY3LWZiZWI4YWMxMTYwYiIsImVtYWlsIjoiYWRlbGprdDQ4QGprdDQ4LmNvbSIsIm5hbWUiOiJSZXZhIEZpZGVsZGEiLCJyb2xlcyI6Im1lbWJlciIsImlhdCI6MTcwOTMzNDMwMSwiZXhwIjoxNzA5NDIwNzAxfQ.-WUJP1Hr9SJaQ21i6pIjzcEAhheSengFG20qOjXehXQ
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjgzY2UwZjhjLTZmYmUtNDY4Mi1hNmQ3LTMwMjY2ZTgwZTg0OCIsImVtYWlsIjoiY2FsbGllMDUwODA4QGprdDQ4LmNvbSIsIm5hbWUiOiJDYWxsaXN0YSBBbGlmaWEiLCJyb2xlcyI6Im1lbWJlciIsImlhdCI6MTcxMDQwMDk3MiwiZXhwIjoxNzQxOTU4NTcyfQ.IkirycLlMsjhUFuMHjpK3fliw6376IVnbNdMyLpBkls
 }
 
 body:json {
@@ -27,4 +27,11 @@ body:json {
       }
     ]
   }
+}
+
+body:multipart-form {
+  conversationId: 4b27af39-11a5-4f06-9ddf-d0b84e2fd029
+  messages: Hehehehe
+  attachments: @file(C:\Users\zane2\Downloads\WhatsApp Image 2024-02-27 at 13.05.57_670d1fd7.jpg)
+  attachments: @file(C:\Users\zane2\Downloads\WhatsApp Image 2024-02-23 at 22.11.08_3cd31e5c.jpg)
 }

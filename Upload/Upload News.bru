@@ -1,0 +1,15 @@
+meta {
+  name: Upload News
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{URL}}/api/upload/news
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  file: @file(C:\Users\zane2\Downloads\ss_5efd318b85a3917d1c6e717f4cb813b47547cd6f.1920x1080.jpg)
+}

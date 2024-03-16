@@ -1,11 +1,15 @@
 meta {
   name: Get All Invoice
   type: http
-  seq: 3
+  seq: 1
 }
 
 get {
   url: {{URL}}/api/invoice
   body: none
-  auth: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZjZDhjMTY0LTRiOWQtNGU3My05MzYwLWZhMzg4ZmJjZTJlMyIsImVtYWlsIjoiaGVsbG9AZmxlZXRpbWUubXkuaWQiLCJuYW1lIjoiTm92aWFuIEFuZGluaSIsInJvbGVzIjoiYWRtaW4iLCJpYXQiOjE3MTAzMTExNTUsImV4cCI6MTc0MTg2ODc1NX0.HWBI1evAMZU2YdR23QMUZr2M_ZPr6nNexF40W2EMR-8
 }
