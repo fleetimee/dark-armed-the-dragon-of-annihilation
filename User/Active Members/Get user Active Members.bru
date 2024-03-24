@@ -1,0 +1,15 @@
+meta {
+  name: Get user Active Members
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{URL}}/api/user/me/getActiveIdols
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoiYWNjZXNzIiwiaWQiOiI1ZGU1NTJjNy0yNjY5LTQ4NGEtOThlNy0yNTA0YTZjZmVhMzEiLCJlbWFpbCI6Im1hY2hhQGdtYWlsLmNvbSIsIm5hbWUiOiJGcmllcmVuIiwicm9sZXMiOiJ1c2VyIiwiaWF0IjoxNzEwOTE1MTE4LCJleHAiOjE3NDI0NzI3MTh9.45bZmTzls-lMv-ZnEEAp63HYpS7QLsLKnaUrCrZyD3o
+}

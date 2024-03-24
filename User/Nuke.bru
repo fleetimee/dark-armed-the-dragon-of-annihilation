@@ -1,0 +1,15 @@
+meta {
+  name: Nuke
+  type: http
+  seq: 6
+}
+
+delete {
+  url: {{URL}}/api/user/me/nuke
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoiYWNjZXNzIiwiaWQiOiI1ZGU1NTJjNy0yNjY5LTQ4NGEtOThlNy0yNTA0YTZjZmVhMzEiLCJlbWFpbCI6Im1hY2hhQGdtYWlsLmNvbSIsIm5hbWUiOiJGcmllcmVuIiwicm9sZXMiOiJ1c2VyIiwiaXNEZWxldGVkIjpmYWxzZSwiaWF0IjoxNzExMDIyOTMzLCJleHAiOjE3NDI1ODA1MzN9.m1gltF92pPQKxhbdC_U45rF-k3TN1IHoYRk4NdWz938
+}

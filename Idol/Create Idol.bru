@@ -1,12 +1,12 @@
 meta {
   name: Create Idol
   type: http
-  seq: 4
+  seq: 5
 }
 
 post {
   url: {{URL}}/api/idol
-  body: json
+  body: multipartForm
   auth: bearer
 }
 
@@ -16,15 +16,29 @@ auth:bearer {
 
 body:json {
   {
-    "email": "marshajkt48@jkt48.com",
+    "email": "zeejkt48@jkt48.com",
     "password": "12345678",
-    "fullName": "Marsha Lenathea",
-    "nickname": "Marsha",
-    "birthday": "2006-01-09",
-    "height": 163,
+    "fullName": "Azizi Asadel",
+    "nickname": "Zee",
+    "birthday": "2004-05-16",
+    "height": 162,
     "bloodType": "O",
     "horoscope": "Taurus",
-    "instagramUrl": "https://www.instagram.com/jkt48.marsha/",
-    "xUrl": "https://twitter.com/L_MarshaJKT48"
+    "instagramUrl": "https://www.instagram.com/jkt48.zee/",
+    "xUrl": "https://twitter.com/A_ZeeJKT48"
   }
+}
+
+body:multipart-form {
+  email: novian@novian.com
+  password: 12345678
+  fullName: Novian Andika
+  nickname: fleetime
+  birthday: 2010-05-05
+  bloodType: A
+  horoscope: Virgo
+  instagramUrl: https://www.instagram.com/allunanika/
+  xUrl: https://twitter.com/risingashenflee
+  profileImage: @file(D:\Downloads\47508893.jpg)
+  height: 178
 }

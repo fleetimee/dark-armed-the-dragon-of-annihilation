@@ -6,16 +6,23 @@ meta {
 
 patch {
   url: {{URL}}/api/user/me
-  body: json
+  body: multipartForm
   auth: bearer
 }
 
 auth:bearer {
-  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZjZDhjMTY0LTRiOWQtNGU3My05MzYwLWZhMzg4ZmJjZTJlMyIsImVtYWlsIjoibm92aWFuLmFuZGlrYUBicGRkaXkuY28uaWQiLCJuYW1lIjoiTm92aWFuYSIsImlhdCI6MTcwODg2Nzk4MiwiZXhwIjoxNzA4OTU0MzgyfQ.lj88gcxYIsvcO_OLsr3vQJGn0J7i-qj2rMIEvshzJJs
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoiYWNjZXNzIiwiaWQiOiJmY2Q4YzE2NC00YjlkLTRlNzMtOTM2MC1mYTM4OGZiY2UyZTMiLCJlbWFpbCI6ImhlbGxvQGZsZWV0aW1lLm15LmlkIiwibmFtZSI6Ik5vdmlhbiBBbmRpbmkiLCJyb2xlcyI6ImFkbWluIiwiaWF0IjoxNzEwNzc1MzU4LCJleHAiOjE3NDIzMzI5NTh9.W2v4PGW6cpmmeM8sfoGmdg6ols9VyZgX6xKFCQqhRA4
 }
 
 body:json {
   {
   
   }
+}
+
+body:multipart-form {
+  profileImage: @file(C:\Users\zane2\Downloads\WhatsApp Image 2024-03-08 at 17.52.57_18e143c3.jpg)
+  name: Tarkus
+  email: hello@fleetime.my.id
+  nickName: Nov
 }

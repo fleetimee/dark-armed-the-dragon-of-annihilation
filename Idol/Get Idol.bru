@@ -5,14 +5,14 @@ meta {
 }
 
 get {
-  url: {{URL}}/api/idol
+  url: {{URL}}/api/idol?pageSize=100
   body: none
   auth: none
 }
 
 query {
+  pageSize: 100
   ~searchQuery: aman
   ~orderDirection: ASC
-  ~pageSize: 1
   ~page: 
 }

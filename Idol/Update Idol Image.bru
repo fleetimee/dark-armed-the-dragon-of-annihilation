@@ -1,12 +1,12 @@
 meta {
-  name: Update Idol
+  name: Update Idol Image
   type: http
-  seq: 3
+  seq: 4
 }
 
 patch {
-  url: {{URL}}/api/idol/JKT48-1
-  body: json
+  url: {{URL}}/api/idol/JKT48-1/profileImage
+  body: multipartForm
   auth: bearer
 }
 
@@ -14,14 +14,6 @@ auth:bearer {
   token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoiYWNjZXNzIiwiaWQiOiJmY2Q4YzE2NC00YjlkLTRlNzMtOTM2MC1mYTM4OGZiY2UyZTMiLCJlbWFpbCI6ImhlbGxvQGZsZWV0aW1lLm15LmlkIiwibmFtZSI6Ik5vdmFuIEFuZGlrYSIsInJvbGVzIjoiYWRtaW4iLCJpc0RlbGV0ZWQiOmZhbHNlLCJpYXQiOjE3MTEyOTE3NzMsImV4cCI6MTc0Mjg0OTM3M30.P9rukiolPr2sxBlRpDeBO0CeRL1iBSI9_0KOg3KFcso
 }
 
-body:json {
-  {
-    "email": "adelbackup@gmail.com",
-    "fullName": "Test",
-    "nickName": "Test Nickname",
-    "birthday": "2000-01-01",
-    "height": 189,
-    "bloodType": "O",
-    "horoscope": "Libra"
-  }
+body:multipart-form {
+  profileImage: @file(D:\Downloads\WhatsApp Image 2024-03-08 at 17.52.57_18e143c3.jpg)
 }

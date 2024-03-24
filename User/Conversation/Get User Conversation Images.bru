@@ -1,0 +1,15 @@
+meta {
+  name: Get User Conversation Images
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{URL}}/api/user/me/conversation/4b27af39-11a5-4f06-9ddf-d0b84e2fd029/images
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoiYWNjZXNzIiwiaWQiOiI1ZGU1NTJjNy0yNjY5LTQ4NGEtOThlNy0yNTA0YTZjZmVhMzEiLCJlbWFpbCI6Im1hY2hhQGdtYWlsLmNvbSIsIm5hbWUiOiJGcmllcmVuIiwicm9sZXMiOiJ1c2VyIiwiaWF0IjoxNzEwODExMzE4LCJleHAiOjE3NDIzNjg5MTh9.oF00FuJ8ZCxpm2AeBR3gcTo4HV_Xd_4_zhWFLyQuzrE
+}
